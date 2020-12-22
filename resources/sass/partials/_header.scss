@@ -1,0 +1,25 @@
+header{
+    .header-top{
+        padding: 20px 0;
+        @include flex(row, center, center);
+    }
+    .header-bottom{
+        ul{
+            @include flex(row, center, center);
+            list-style: none;
+            li{
+                display: inline-block;
+                a{
+                    font-size: $header_font_size;
+                    font-weight: bold;
+                    display: block;
+                    color: $header_font_color;
+                    padding: $header_font_spacing;
+                    &:hover{
+                        background-color: lightblue;
+                    }
+                }
+            }
+        }
+    }
+}

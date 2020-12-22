@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .header-top {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-bottom ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header .header-bottom ul li {
+  display: inline-block;
+}
+
+header .header-bottom ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  color: black;
+  padding: 10px;
+}
+
+header .header-bottom ul li a:hover {
+  background-color: lightblue;
+}
+
+main {
+  background-image: url("C:MAMPhtdocsooleanlaravel-molisanapublicimgbackground.png");
+}
+
