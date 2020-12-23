@@ -45,7 +45,82 @@ header .header-bottom ul li a:hover {
   background-color: lightblue;
 }
 
-main {
-  background-image: url("C:MAMPhtdocsooleanlaravel-molisanapublicimgbackground.png");
+header .header-bottom ul li .active {
+  background: lightblue;
+}
+
+main .container h1 {
+  text-transform: uppercase;
+}
+
+main .container ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+main .container ul li {
+  margin: 0 5px 5px 0;
+  position: relative;
+  height: 200px;
+}
+
+main .container ul li img {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+}
+
+main .container ul li .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+main .container ul li .overlay p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main .container ul li:hover .overlay {
+  opacity: 1;
+}
+
+.main-detail h1 {
+  text-align: center;
+  color: #002d73;
+  background-color: #B8DAE6;
+}
+
+.main-detail img {
+  width: 100%;
+  display: block;
+}
+
+.main-detail .container {
+  background-color: #B8DAE6;
+}
+
+.main-detail .container p {
+  color: #002d73;
+}
+
+footer img {
+  display: block;
 }
 

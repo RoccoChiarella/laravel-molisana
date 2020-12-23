@@ -1,10 +1,69 @@
 main{
-    background-image: url('C:/MAMP/htdocs/Boolean/laravel-molisana/public/imgbackground.png');
+    background-image: url('../img/background.jpg');
     .container{
+        h1{
+            text-transform: uppercase;
+        }
         ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
             li{
-
+                margin: 0 5px 5px 0;
+                position: relative;
+                height: 200px;
+                img{
+                    display: block;
+                    height: 100%;
+                    object-fit: cover;
+                    vertical-align: bottom;
+                }
+                .overlay{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: rgba(29, 106, 154, 0.72);
+                    color: #fff;
+                    opacity: 0;
+                    transition: opacity .2s, visibility .2s;
+                    p{
+                        color: white;
+                        font-size: 20px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                    }
+                }
+                &:hover .overlay{
+                    opacity: 1;
+                }
             }
+        }
+    }
+}
+
+.main-detail{
+    h1{
+        text-align: center;
+        color: rgb(0, 45, 115);
+        background-color: #B8DAE6;
+    }
+    img{
+        width: 100%;
+        display: block;
+    }
+    .container{
+        background-color: #B8DAE6;
+        p{
+            color: rgb(0, 45, 115);
         }
     }
 }
